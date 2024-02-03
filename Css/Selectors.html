@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /*Element Selector*/
+        /* div{
+            background-color: red;
+        } */
+        /*All div html element's background color will change to red */ 
+        /*Class */
+        .red{
+            background-color: aqua;
+            color: rgb(248, 9, 9);
+        }
+        /*Id Selector*/
+       #blue{
+            background-color: black;
+            color: aliceblue;
+       }
+       div > p{
+        background-color:burlywood;
+       }
+
+       /* Pseudo Selector */
+       /* Visited link will turn to yellow */
+       a:visited{
+        color :yellow;
+       }
+       /* all links which are not visited yet changes to aqua */
+       a:link{
+        color: aquamarine;
+       }
+       /* when we click on link color changes */
+       a:active{
+        background-color: black;
+       }
+
+       /*both active and hover don't work together 
+        when we hovwe on link the color changes  */
+       a:hover{
+        background-color: brown;
+       }
+       /* first-child   whereever the p tag is first child of any element it 
+       changes color of that p tag only*/
+       p:first-child{
+
+       }
+    </style>
+</head>
+<body>
+    <h1>
+        Selector
+    </h1>
+    <p>
+        selector is used to select a HTML Element 
+    </p>
+    <p>The moment we create another div it's backgrouond color will also convert to red 
+        and if we want to change a specific element we use diff selector  </p>
+   <!-- /*Class selector*/ -->
+   <h2>Class Selector</h2>
+   <div class="red" >
+    I am a div
+   </div>
+   <h2>id Selector</h2>
+  <div id="blue">
+    I am a Id selector
+    <h3>Child selector</h3>
+    <p>hey para </p>
+  </div>
+  <!-- Pseudo Selectors -->
+  <h3>Pseudo Selectors</h3>
+  <div>
+    <a href="https://www.google.com">Go to Gooogle</a>
+    <br>
+    <a href="https://www.facebook2.com">Got to Facebook</a>
+  </div>
+</body>
+</html>

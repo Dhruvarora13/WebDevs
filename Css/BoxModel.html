@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .box{
+            padding: 30px;
+            background-color: red;
+            color: yellow;
+            border: 5px solid black;
+        }
+        .box2{
+            border: 5px solid blue;
+            height: 200px; /* it gives 200px height to content */
+            box-sizing: border-box; /* by adding this 200px will include the height 
+          of padding and border both n calculate the contentheight by subtractin
+           both padding and border,content +boder+padding = 200px */
+          margin: 15px;
+          /*margin collapse is a phenomeon where two margin are describe then the high 
+          margin value will work*/ 
+        }
+        .box1{
+            margin: 15px;
+            /*Margin is outermost of box and doesn;t include blackground properties*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        <h1>This is padding</h1>
+    </div>
+    <div class="box box2">
+        <h2>This is Box 2</h2>
+    </div>
+</body>
+</html>
